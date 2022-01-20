@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer components{
+  .icons-w-h{
+    @apply hidden h-6 md:inline-flex cursor-pointer hover:scale-105 transition-all duration-150 ease-out 
+
+  }
+  
+  .btn{
+    @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out
+  }
+
+  .responsive{
+    display: none;
+  }
+}
+
+
+
+@layer utilities {
+  .show__display{
+    display:none;
+  }
+
+  .margins{
+    margin-top:44px;
+  }
+
+  
+  @media(max-width: 500px){
+    .asd{
+      display: none;
+    }
+    .show__display{
+      display:inline
+    }
+
+    .header__main{
+      display: none;
+    }
+
+    .margins{
+      margin-top:24px;
+    }
+  
+  }
+
+  
+}
